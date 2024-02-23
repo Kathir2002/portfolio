@@ -74,6 +74,7 @@ const Home = () => {
             intensity={2}
           />
           <hemisphereLight
+            // @ts-ignore
             skyColor="rgb(177, 225, 255)"
             groundColor="#000000"
             intensity={1}

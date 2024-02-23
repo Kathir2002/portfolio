@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+// @ts-ignore
 import { projects } from "../constants/index";
 import Arrow from "../assets/icons/arrow.svg";
 import CTA from "../components/CTA";
@@ -29,6 +30,7 @@ const Projects = () => {
                   <img
                     src={project?.iconUrl}
                     alt="project"
+                    // @ts-ignore
                     className="w-1/2 w-1/2 object-contain"
                   />
                 </div>

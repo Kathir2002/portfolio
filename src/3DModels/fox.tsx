@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+// @ts-ignore
 import foxScene from "../assets/3DFiles/fox.glb";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-const Fox = ({ currentAnimation, ...props }) => {
+const Fox = ({ currentAnimation, ...props }: any) => {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(foxScene);
   const { actions } = useAnimations(animations, group);

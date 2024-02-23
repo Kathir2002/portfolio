@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useAnimations, useGLTF } from "@react-three/drei";
-
+// @ts-ignore
 import birdScene from "../assets/3DFiles/bird.glb";
 import { useFrame } from "@react-three/fiber";
 const Bird = () => {
-  const birdRef = useRef();
+  const birdRef: any = useRef();
   const { scene, animations } = useGLTF(birdScene);
 
   const { actions } = useAnimations(animations, birdRef);

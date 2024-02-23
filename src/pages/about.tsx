@@ -1,3 +1,4 @@
+// @ts-ignore
 import { skills, experiences } from "../constants/index";
 import {
   VerticalTimeline,

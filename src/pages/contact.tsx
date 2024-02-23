@@ -14,11 +14,6 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState<boolean>(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
-  console.log(
-    import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-    import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-    import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-  );
 
   const handleSubmit = (event: any) => {
     event.preventDefault();

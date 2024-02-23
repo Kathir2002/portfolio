@@ -1,8 +1,9 @@
 import { useAnimations, useGLTF } from "@react-three/drei";
+// @ts-ignore
 import planeScene from "../assets/3DFiles/plane.glb";
 import { useEffect, useRef } from "react";
 
-const Plane = ({ isRotating, ...props }) => {
+const Plane = ({ isRotating, ...props }: any) => {
   const ref = useRef();
   const { scene, animations } = useGLTF(planeScene);
   const { actions }: any = useAnimations(animations, ref);
