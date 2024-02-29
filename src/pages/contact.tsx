@@ -84,7 +84,7 @@ const Contact = () => {
             />
           </label>
           <label className="text-black-500 font-semibold">
-            Name
+            Email
             <input
               type="email"
               name="email"
